@@ -1,7 +1,12 @@
-import Button from "@/components/Button/Button"
+import Divider from "@/components/Divider/Divider";
+import Text from "@/components/Text/Text";
 
 const App = () => {
-  return <Button>Botão</Button>
-}
+  return (
+    <Divider>
+      <Text size="lg">Design System com React</Text>
+    </Divider>
+  );
+};
 
-export default App
+export default App;
