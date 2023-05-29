@@ -1,0 +1,30 @@
+import { Meta, Primary, Canvas, Controls } from "@storybook/blocks";
+
+import * as Story from "./Box.stories.ts";
+
+<Meta of={Story} />
+
+# Caixa
+
+Este é um componente divisor de seções.
+
+### Caixa padrão
+
+<Canvas of={Story.Default} />
+
+### Caixa de Alerta
+
+<Canvas of={Story.BoxAlert} />
+
+### Caixa de Error
+
+<Canvas of={Story.BoxError} />
+
+### Caixa de Sucesso
+
+<Canvas of={Story.BoxSuccess} />
+
+## Documentação Interativa
+
+<Primary />
+<Controls />

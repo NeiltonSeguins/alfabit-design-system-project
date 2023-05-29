@@ -5,7 +5,7 @@ export type DividerProps = {
   height?: string;
   bgColor?: "light" | "dark";
   children?: React.ReactNode;
-} & React.HTMLAttributes<HTMLElement>;
+} & React.HTMLAttributes<HTMLDivElement>;
 
 const Divider = ({
   children,
