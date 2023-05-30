@@ -14,12 +14,13 @@ const Box = ({
   filledBackground = false,
   type = "default",
   children,
+  className,
   ...rest
 }: BoxProps) => {
-  let classNames = "p-4";
+  let classNames = "";
 
   if (rounded) {
-    classNames += " rounded-lg";
+    classNames += " rounded-md";
   }
 
   if (border) {
@@ -39,7 +40,7 @@ const Box = ({
   }
 
   return (
-    <div className={classNames} {...rest}>
+    <div className={`${classNames} ${className}`} {...rest}>
       {children}
     </div>
   );

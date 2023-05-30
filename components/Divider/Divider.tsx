@@ -20,7 +20,9 @@ const Divider = ({
       {...rest}
     >
       <div
-        className={`w-1/3 ${height ? height : "h-[1px]"} ${
+        className={`${children ? "w-1/3" : "w-1/2"} ${
+          height ? height : "h-[1px]"
+        } ${
           bgColor === "dark"
             ? "bg-dark"
             : bgColor === "light"
@@ -30,7 +32,9 @@ const Divider = ({
       ></div>
       {children && <div className="px-3">{children}</div>}
       <div
-        className={`w-1/3 ${height ? height : "h-[1px]"} ${
+        className={`${children ? "w-1/3" : "w-1/2"} ${
+          height ? height : "h-[1px]"
+        } ${
           bgColor === "dark"
             ? "bg-dark"
             : bgColor === "light"

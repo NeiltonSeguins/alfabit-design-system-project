@@ -11,6 +11,7 @@ const meta: Meta<BoxProps> = {
     rounded: { type: "boolean" },
     border: { type: "boolean" },
     filledBackground: { type: "boolean" },
+    className: { type: "string" },
   },
 };
 

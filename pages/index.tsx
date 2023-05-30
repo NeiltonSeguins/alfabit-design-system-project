@@ -1,25 +1,40 @@
 import Box from "@/components/Box/Box";
+import Button from "@/components/Button/Button";
+import Divider from "@/components/Divider/Divider";
+import Notice from "@/components/Notice/Notice";
 import Text from "@/components/Text/Text";
 
 const App = () => {
   return (
-    <div>
-      <Box rounded border>
-        <Text size="xl" className="font-bold">Título da Caixa</Text>
-        <Text>Conteúdo da caixa</Text>
-      </Box>
+    <div className="mx-auto my-0 w-4/5 flex justify-center">
+      <div className="w-2/4 flex flex-col justify-center gap-1">
+        <Divider>
+          <Text size="title3">Text Block</Text>
+        </Divider>
 
-      <Box filledBackground type="alert">
-        <p>Este é um alerta!</p>
-      </Box>
+        <Box className="p-5 bg-slate-200" rounded>
+          <Text size="xl" className="font-black">
+            Title
+          </Text>
+          <Text size="sm">
+            Earth is the third planet from the Sun and the only astronomi cal
+            object known to harbor life. According to radiometric dating
+            estimation and other evidence, Earth formed over 4.5 billion years
+            ago. Earth is the third planet from the Sun and the only
+            astronomical object known to harbor life. According to radiometric
+            dating estimation and other evidence, Earth formed over 4.5 billion
+            years ago.
+          </Text>
+        </Box>
 
-      <Box filledBackground type="success">
-        <p>Operação concluída com sucesso!</p>
-      </Box>
+        <Divider>
+          <Text size="title3">Notice</Text>
+        </Divider>
 
-      <Box filledBackground type="error">
-        <p>Ocorreu um erro durante a operação.</p>
-      </Box>
+        <Notice type="success" message="A operação foi um sucesso!" />
+        <Notice type="alert" message="Este é um alerta!" />
+        <Notice type="error" message="Ocorreu um erro durante a operação!" />
+      </div>
     </div>
   );
 };
