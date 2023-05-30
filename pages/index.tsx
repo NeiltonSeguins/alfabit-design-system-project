@@ -1,3 +1,4 @@
+import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
 import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
@@ -34,6 +35,17 @@ const App = () => {
         <Notice type="success" message="A operação foi um sucesso!" />
         <Notice type="alert" message="Este é um alerta!" />
         <Notice type="error" message="Ocorreu um erro durante a operação!" />
+
+        <Divider>
+          <Text size="title3">Avatar</Text>
+        </Divider>
+
+        <div className="w-full flex items-center justify-evenly p-3 rounded-sm bg-slate-500">
+          <Avatar />
+          <Avatar size="sm" />
+          <Avatar size="md" />
+          <Avatar size="lg" />
+        </div>
       </div>
     </div>
   );
