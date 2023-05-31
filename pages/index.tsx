@@ -1,8 +1,8 @@
 import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
-import Button from "@/components/Button/Button";
 import Divider from "@/components/Divider/Divider";
 import Notice from "@/components/Notice/Notice";
+import Switch from "@/components/Switch/Switch";
 import Text from "@/components/Text/Text";
 
 const App = () => {
@@ -46,6 +46,8 @@ const App = () => {
           <Avatar size="md" />
           <Avatar size="lg" />
         </div>
+
+        <Switch />
       </div>
     </div>
   );

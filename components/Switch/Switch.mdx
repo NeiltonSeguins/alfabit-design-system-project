@@ -1,0 +1,33 @@
+import { Canvas, Meta, Primary, Controls } from "@storybook/blocks";
+
+import * as SwitchStories from "./Switch.stories";
+
+<Meta of={SwitchStories} />
+
+# Switch
+
+<p>Switch is a clickable interactive element that wraps a toggling action.</p>
+
+## Variants:
+
+### Common
+
+<Canvas of={SwitchStories.CommonEnabled} />
+<Canvas of={SwitchStories.CommonNotEnabled} />
+
+### Contract
+
+<Canvas of={SwitchStories.ContractEnabled} />
+<Canvas of={SwitchStories.ContractNotEnabled} />
+
+### Disabled
+
+<Canvas of={SwitchStories.CommonEnabledDisabled} />
+<Canvas of={SwitchStories.CommonNotEnabledDisabled} />
+<Canvas of={SwitchStories.ContractEnabledDisabled} />
+<Canvas of={SwitchStories.ContractNotEnabledDisabled} />
+
+## Documentação Interativa
+
+<Primary />
+<Controls include={["variant", "default", "disabled"]} />
