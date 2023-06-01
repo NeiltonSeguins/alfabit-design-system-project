@@ -1,17 +1,26 @@
 import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
 import Divider from "@/components/Divider/Divider";
+import Dropdown from "@/components/Dropdown/Dropdown";
 import Notice from "@/components/Notice/Notice";
 import Switch from "@/components/Switch/Switch";
 import Text from "@/components/Text/Text";
 
+const people: string[] = [
+  "Durward Reynolds",
+  "Kenton Towne",
+  "Therese Wunsch",
+  "Benedict Kessler",
+  "Katelyn Rohan",
+];
+
 const App = () => {
   return (
-    <div className="mx-auto my-0 w-4/5 flex justify-center">
-      <div className="w-2/4 flex flex-col justify-center gap-1">
-        <Divider>
-          <Text size="title3">Text Block</Text>
-        </Divider>
+    <div className="h-screen mx-auto my-0 w-4/5 flex justify-center">
+      <div className="w-2/4 flex flex-col gap-1 justify-start">
+        <Text size="title3" className="mt-4">
+          Text Block
+        </Text>
 
         <Box className="p-5 bg-slate-200" rounded>
           <Text size="xl" className="font-black">
@@ -28,17 +37,23 @@ const App = () => {
           </Text>
         </Box>
 
-        <Divider>
-          <Text size="title3">Notice</Text>
-        </Divider>
+        <Text size="title3" className="mt-4">
+          Dropdown
+        </Text>
+
+        <Dropdown list={people} />
+
+        <Text size="title3" className="mt-4">
+          Notice
+        </Text>
 
         <Notice type="success" message="A operação foi um sucesso!" />
         <Notice type="alert" message="Este é um alerta!" />
         <Notice type="error" message="Ocorreu um erro durante a operação!" />
 
-        <Divider>
-          <Text size="title3">Avatar</Text>
-        </Divider>
+        <Text size="title3" className="mt-4">
+          Avatar
+        </Text>
 
         <div className="w-full flex items-center justify-evenly p-3 rounded-sm bg-slate-500">
           <Avatar />
@@ -46,8 +61,6 @@ const App = () => {
           <Avatar size="md" />
           <Avatar size="lg" />
         </div>
-
-        <Switch />
       </div>
     </div>
   );

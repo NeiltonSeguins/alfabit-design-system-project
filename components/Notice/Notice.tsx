@@ -43,7 +43,7 @@ const Notice = ({
         <Text className={`${getTypeNotice(type)} ${className}`}>{message}</Text>
       </div>
       {children}
-      <XMarkIcon className="w-4 h-4" />
+      <XMarkIcon className="w-4 h-4 cursor-pointer" />
     </Box>
   );
 };
