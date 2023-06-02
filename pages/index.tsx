@@ -1,9 +1,7 @@
 import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
-import Divider from "@/components/Divider/Divider";
 import Dropdown from "@/components/Dropdown/Dropdown";
 import Notice from "@/components/Notice/Notice";
-import Switch from "@/components/Switch/Switch";
 import Text from "@/components/Text/Text";
 
 const people: string[] = [

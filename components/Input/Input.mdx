@@ -1,6 +1,6 @@
-import { Meta, Canvas, Primary, Controls } from '@storybook/blocks'
+import { Meta, Canvas, Primary, Controls } from "@storybook/blocks";
 
-import * as Story from './Input.stories.ts'
+import * as Story from "./Input.stories.ts";
 
 <Meta of={Story} />
 
@@ -9,22 +9,24 @@ import * as Story from './Input.stories.ts'
 Este é o componente de input, utilizado para receber dados do usuário via texto.
 
 ### Primário
-<Canvas of={Story.Primary} />
+
+<Canvas of={Story.Primary} layout="centered" />
 ### Primário Desabilitado
-<Canvas of={Story.PrimaryDisabled} />
+<Canvas of={Story.PrimaryDisabled} layout="centered" />
 ### Multilinhas
-<Canvas of={Story.Multiline} />
+<Canvas of={Story.Multiline} layout="centered" />
 ### Multilinhas Desabilitado
-<Canvas of={Story.MultilineDisabled} />
+<Canvas of={Story.MultilineDisabled} layout="centered" />
 ### Primário com Label
-<Canvas of={Story.PrimaryLabel} />
+<Canvas of={Story.PrimaryLabel} layout="centered" />
 ### Primário Desabilitado com Label
-<Canvas of={Story.PrimaryLabelDisabled} />
+<Canvas of={Story.PrimaryLabelDisabled} layout="centered" />
 ### Multilinhas com Label
-<Canvas of={Story.MultilineLabel} />
+<Canvas of={Story.MultilineLabel} layout="centered" />
 ### Multilinhas Desabilitado com Label
-<Canvas of={Story.MultilineLabelDisabled} />
+<Canvas of={Story.MultilineLabelDisabled} layout="centered" />
 
 ## Documentação Interativa
+
 <Primary />
 <Controls />

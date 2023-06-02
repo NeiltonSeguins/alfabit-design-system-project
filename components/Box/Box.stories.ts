@@ -26,7 +26,6 @@ export const Default: StoryObj<BoxProps> = {
     children: "Este é uma Box Padrão",
     filledBackground: true,
     type: "default",
-    border: true,
   },
 };
 
