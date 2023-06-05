@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 const textVariants = cva(["text-gray-primary", "text-sm", "font-normal"], {
   variants: {
-    intent: {
+    variant: {
       primary: ["text-gray-primary"],
       secondary: ["text-gray-secondary"],
       tertiary: ["text-gray-tertiary"],
@@ -19,7 +19,7 @@ const textVariants = cva(["text-gray-primary", "text-sm", "font-normal"], {
       title3: ["text-tmd"],
     },
     defaultVariants: {
-      intent: "primary",
+      variant: "primary",
       size: "md",
     },
   },
@@ -27,11 +27,16 @@ const textVariants = cva(["text-gray-primary", "text-sm", "font-normal"], {
 
 export type TextProps = VariantProps<typeof textVariants> & {
   children: React.ReactNode;
-  element?: "h1" | "h2" | "h3" | "p";
-} & React.HTMLAttributes<HTMLElement>;
+  element?: keyof JSX.IntrinsicElements;
+} & JSX.IntrinsicElements["p"];
 
-const Text = ({ children, element = "p", className, ...rest }: TextProps) => {
-  const Element = element;
+const Text = ({
+  children,
+  element = "p",
+  className = "",
+  ...rest
+}: TextProps) => {
+  const Element = element as any;
   return (
     <Element className={`${textVariants(rest)} ${className}`} {...rest}>
       {children}
