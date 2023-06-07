@@ -1,46 +1,42 @@
 import React from "react";
+import classNames from "classnames";
 
 export type BoxProps = {
   rounded?: boolean;
   border?: boolean;
   filledBackground?: boolean;
-  type?: "default" | "alert" | "success" | "error";
+  type?: "primary" | "alert" | "success" | "error";
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
+
+const typeClassMap = {
+  primary: "",
+  alert: "bg-yellow-100 text-yellow-900",
+  success: "bg-green-100 text-green-900",
+  error: "bg-red-100 text-red-900",
+};
 
 const Box = ({
   rounded = false,
   border = false,
   filledBackground = false,
-  type = "default",
+  type = "primary",
   children,
   className,
   ...rest
 }: BoxProps) => {
-  let classNames = "";
-
-  if (rounded) {
-    classNames += " rounded-md";
-  }
-
-  if (border) {
-    classNames += " border border-gray-300";
-  }
-
-  if (filledBackground) {
-    classNames += " bg-gray-100";
-  }
-
-  if (type === "alert") {
-    classNames += " bg-yellow-100 text-yellow-900";
-  } else if (type === "success") {
-    classNames += " bg-green-100 text-green-900";
-  } else if (type === "error") {
-    classNames += " bg-red-100 text-red-900";
-  }
+  const classes = classNames(
+    {
+      "rounded-md": rounded,
+      "border border-gray-300": border,
+      "bg-gray-100": filledBackground,
+      [typeClassMap[type]]: type,
+    },
+    className
+  );
 
   return (
-    <div className={`${classNames} ${className}`} {...rest}>
+    <div className={classes} {...rest}>
       {children}
     </div>
   );
