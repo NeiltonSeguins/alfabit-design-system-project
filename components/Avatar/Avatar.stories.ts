@@ -34,3 +34,10 @@ export const AvatarLarge: StoryObj<AvatarProps> = {
     size: "lg",
   },
 };
+
+export const AvatarImage: StoryObj<AvatarProps> = {
+  args: {
+    size: "lg",
+    image: "https://placehold.co/400x400.png",
+  },
+};
