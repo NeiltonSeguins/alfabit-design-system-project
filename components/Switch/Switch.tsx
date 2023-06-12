@@ -8,14 +8,14 @@ import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import useStyle from "./Switch.style";
 
 export type SwitchProps = {
-  default?: boolean;
+  defaultEnabled?: boolean;
   variant?: "common" | "contract";
   disabled?: boolean;
   onChange?: (enabled: boolean) => void;
 } & HeadlessSwitchProps<any>;
 
 const Switch = ({
-  default: enabledByDefault,
+  defaultEnabled: enabledByDefault,
   variant = "common",
   disabled,
   onChange,

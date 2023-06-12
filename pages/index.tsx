@@ -2,6 +2,7 @@ import Avatar from "@/components/Avatar/Avatar";
 import Box from "@/components/Box/Box";
 import Dropdown from "@/components/Dropdown/Dropdown";
 import Notice from "@/components/Notice/Notice";
+import Switch from "@/components/Switch/Switch";
 import Text from "@/components/Text/Text";
 
 const people: string[] = [
@@ -34,6 +35,12 @@ const App = () => {
             years ago.
           </Text>
         </Box>
+
+        <Text size="title3" className="mt-4">
+          Switch
+        </Text>
+
+        <Switch />
 
         <Text size="title3" className="mt-4">
           Dropdown
