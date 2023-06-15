@@ -5,12 +5,14 @@ export type BoxProps = {
   rounded?: boolean;
   border?: boolean;
   filledBackground?: boolean;
-  type?: "primary" | "alert" | "success" | "error";
+  type?: "primary" | "secondary" | "dark" | "alert" | "success" | "error";
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const typeClassMap = {
-  primary: "",
+  primary: "bg-primary",
+  secondary: "bg-tertiary",
+  dark: "bg-dark",
   alert: "bg-yellow-100 text-yellow-900",
   success: "bg-green-100 text-green-900",
   error: "bg-red-100 text-red-900",
