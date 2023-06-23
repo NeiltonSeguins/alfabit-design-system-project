@@ -3,7 +3,7 @@ import { create } from "@storybook/theming/create";
 export default create({
   base: "dark",
   brandTitle: "Alfabit Design System",
-  brandUrl: "https://example.com",
-  brandImage: "https://storybook.js.org/images/placeholders/350x150.png",
+  brandUrl: "https://github.com/NeiltonSeguins/alfabit-design-system",
+  brandImage: "./logo-alfabit-branco.png",
   brandTarget: "_self",
 });
