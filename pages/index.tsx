@@ -1,9 +1,7 @@
-import Avatar from "@/components/Avatar/Avatar";
-import Dropdown from "@/components/Dropdown/Dropdown";
-import Notice from "@/components/Notice/Notice";
-import Switch from "@/components/Switch/Switch";
+import Modal from "@/components/Modal/Modal";
 import Text from "@/components/Text/Text";
-import TextBlock from "@/components/TextBlock/TextBlock";
+import Button from "@/components/Button/Button";
+import { useState } from "react";
 
 const people: string[] = [
   "Durward Reynolds",
@@ -14,53 +12,51 @@ const people: string[] = [
 ];
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
-    <div className="h-screen mx-auto my-0 w-4/5 flex justify-center">
-      <div className="w-2/4 flex flex-col gap-1 justify-start">
+    <div className="h-screen mx-auto my-0 w-4/5 flex justify-center bg-gray-800">
+      <div className="w-2/4 flex flex-col gap-1 justify-star">
         <Text size="title3" className="mt-4">
-          TextBlock
+          Modal
         </Text>
 
-        <TextBlock title="Title" type="dark">
-          Earth is the third planet from the Sun and the only astronomi cal
-          object known to harbor life. According to radiometric dating
-          estimation and other evidence, Earth formed over 4.5 billion years
-          ago. Earth is the third planet from the Sun and the only astronomical
-          object known to harbor life. According to radiometric dating
-          estimation and other evidence, Earth formed over 4.5 billion years
-          ago.
-        </TextBlock>
+        <Button variant="secondary" onClick={openModal}>
+          Abre modal
+        </Button>
 
-        <Text size="title3" className="mt-4">
-          Switch
-        </Text>
-
-        <Switch />
-
-        <Text size="title3" className="mt-4">
-          Dropdown
-        </Text>
-
-        <Dropdown list={people} />
-
-        <Text size="title3" className="mt-4">
-          Notice
-        </Text>
-
-        <Notice type="success" message="A operação foi um sucesso!" />
-        <Notice type="alert" message="Este é um alerta!" />
-        <Notice type="error" message="Ocorreu um erro durante a operação!" />
-
-        <Text size="title3" className="mt-4">
-          Avatar
-        </Text>
-
-        <div className="w-full flex items-center justify-evenly p-3 rounded-sm bg-slate-500">
-          <Avatar />
-          <Avatar size="sm" />
-          <Avatar size="md" />
-          <Avatar size="lg" />
-        </div>
+        {/* <button
+          type="button"
+          onClick={openModal}
+          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+        >
+          Open Modal
+        </button> */}
+        <Modal title="Heading" isOpen={isOpen} onClose={closeModal}>
+          <Text element="p">
+            Today, every company I talk to wants to implement a design system
+            from scratch. Unfortunately, the details of a design system are not
+            explored, so often they are not used to the maximum to create a
+            useful user experience.
+          </Text>
+          <Text>
+            New designers can take a look at any of the design patterns listed
+            below to learn best practices and make informed design decisions on
+            their projects.
+          </Text>
+          <div className=" flex flex-col gap-3">
+            <Button>Primary button</Button>
+            <Button variant="secondary">Secondary button</Button>
+          </div>
+        </Modal>
       </div>
     </div>
   );
