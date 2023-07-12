@@ -5,7 +5,7 @@ import Text from "../Text/Text";
 import Button from "../Button/Button";
 
 const meta: Meta<typeof Modal> = {
-  title: "Molecules/Modal",
+  title: "Desing System/Molecules/Modal",
   component: Modal,
   decorators: [
     (Story) => (

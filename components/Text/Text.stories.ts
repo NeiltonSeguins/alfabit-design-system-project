@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import Text, { type TextProps } from "./Text";
 
 const meta: Meta<TextProps> = {
-  title: "Atoms/Text",
+  title: "Desing System/Atoms/Text",
   component: Text,
   argTypes: {
     className: {
