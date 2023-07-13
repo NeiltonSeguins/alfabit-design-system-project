@@ -10,7 +10,7 @@ const meta: Meta<BoxProps> = {
     type: {
       type: "string",
       options: ["alert", "primary", "secondary", "dark", "success", "error"],
-      control: { type: "radio" },
+      control: { type: "select" },
     },
     rounded: { type: "boolean" },
     border: { type: "boolean" },

@@ -80,12 +80,7 @@ export const Primary: Story = {
   args: {
     isOpen: false,
     title: "Modal Primary",
-    children: (
-      <Text size="md">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        voluptates vitae, maxime laboriosam
-      </Text>
-    ),
+    children: "Olá mundo",
   },
   render: (args: ModalProps) => {
     return <ModalStoryPrimary {...args} />;
