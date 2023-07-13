@@ -6,6 +6,13 @@ const meta: Meta<DropdownProps> = {
   title: "Desing System/Molecules/Dropdown",
   component: Dropdown,
   argTypes: {},
+  decorators: [
+    (Story) => (
+      <div style={{ paddingBottom: "15em", paddingTop: "3em" }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
 export default meta;
