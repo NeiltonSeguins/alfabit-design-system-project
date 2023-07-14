@@ -1,15 +1,24 @@
 {
-  "name": "alfabit-design-system",
+  "name": "ds-alfabit",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/cjs/index.ts",
+  "type": "module",
+  "module": "dist/esm/index.ts",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "pkg-build": "rollup -c --bundleConfigAsCjs",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "license": "ISC",
   "dependencies": {
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
@@ -29,6 +38,9 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
@@ -39,6 +51,9 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/theming": "^7.0.20",
     "eslint-plugin-storybook": "^0.6.12",
-    "storybook": "^7.0.12"
+    "rollup": "^3.26.2",
+    "rollup-plugin-dts": "^5.3.0",
+    "storybook": "^7.0.12",
+    "tslib": "^2.6.0"
   }
 }
