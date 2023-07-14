@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "main": "dist/cjs/index.ts",
-  "type": "module",
   "module": "dist/esm/index.ts",
   "files": [
     "dist"
