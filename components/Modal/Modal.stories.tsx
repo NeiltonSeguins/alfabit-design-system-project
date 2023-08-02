@@ -4,6 +4,7 @@ import Modal, { type ModalProps } from "./Modal";
 import Text from "../Text/Text";
 import Button from "../Button/Button";
 import { useState } from "react";
+import React from "react";
 
 const ModalStoryInfo = (args: ModalProps) => {
   const [isOpen, setIsOpen] = useState(args.isOpen);

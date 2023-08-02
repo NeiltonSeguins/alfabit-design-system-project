@@ -10,7 +10,7 @@ export type ModalProps = {
 } & DialogProps<any> &
   React.HTMLAttributes<HTMLDivElement>;
 
-const Modal = ({ children, isOpen, onClose, title, className }: ModalProps) => {
+const Modal = ({ children, isOpen, onClose, title }: ModalProps) => {
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={onClose}>
