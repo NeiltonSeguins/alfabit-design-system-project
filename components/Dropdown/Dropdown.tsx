@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { dropdownStyles } from "./Dropdown.style";
+import React from "react";
 
 export type DropdownProps = {
   list: string[];
