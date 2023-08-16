@@ -2,7 +2,6 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Dropdown, { type DropdownProps } from "./Dropdown";
-import React from "react";
 
 const meta: Meta<DropdownProps> = {
   title: "Desing System/Molecules/Dropdown",
