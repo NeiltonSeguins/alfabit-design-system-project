@@ -1,11 +1,13 @@
 {
-  "name": "ds-alfabit",
+  "name": "ds-alfabit-v1",
   "version": "0.1.0",
-  "private": true,
-  "main": "dist/cjs/index.ts",
-  "module": "dist/esm/index.ts",
+  "private": false,
+  "main": "./index.ts",
   "files": [
-    "dist"
+    "styles/globals.css",
+    "tailwind.config.js",
+    "components/*",
+    "fonts/*"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
@@ -54,5 +56,15 @@
     "rollup-plugin-dts": "^5.3.0",
     "storybook": "^7.3.1",
     "tslib": "^2.6.0"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeiltonSeguins/alfabit-design-system-project.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/NeiltonSeguins/alfabit-design-system-project/issues"
+  },
+  "homepage": "https://github.com/NeiltonSeguins/alfabit-design-system-project#readme"
 }
