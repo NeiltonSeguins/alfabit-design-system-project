@@ -1,19 +1,17 @@
 {
   "name": "ds-alfabit-v1",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
-  "main": "./index.ts",
+  "main": "components/index.ts",
   "files": [
     "styles/globals.css",
     "tailwind.config.js",
     "components/*",
     "fonts/*"
   ],
-  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "pkg-build": "rollup -c --bundleConfigAsCjs",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
