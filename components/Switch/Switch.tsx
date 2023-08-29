@@ -6,6 +6,7 @@ import {
 import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 import useStyle from "./Switch.style";
+import React from "react";
 
 export type SwitchProps = {
   defaultEnabled?: boolean;

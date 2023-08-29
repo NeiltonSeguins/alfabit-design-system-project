@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import AvatarImage from "./AvatarImage";
 import AvatarIcon from "./AvatarIcon";
+import React from "react";
 
 export type AvatarProps = {
   size?: "xs" | "sm" | "md" | "lg";

@@ -7,6 +7,7 @@ import {
 import Box from "../Box/Box";
 import Text from "../Text/Text";
 import { cva, type VariantProps } from "class-variance-authority";
+import React from "react";
 
 export type NoticeProps = VariantProps<typeof noticeVariants> & {
   type: "alert" | "success" | "error";
