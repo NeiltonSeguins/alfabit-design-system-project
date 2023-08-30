@@ -2,7 +2,7 @@
   "name": "ds-alfabit-v1",
   "version": "0.1.11",
   "private": false,
-  "main": "./index.ts",
+  "main": "./components/index.ts",
   "files": [
     "styles/globals.css",
     "tailwind.config.js",
