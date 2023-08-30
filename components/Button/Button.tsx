@@ -1,7 +1,7 @@
 import React from "react";
 
 export type ButtonProps = {
-  children: React.ReactNode;
+  children: string;
   variant?: "primary" | "secondary" | "tertiary";
   onClick?: () => void;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
