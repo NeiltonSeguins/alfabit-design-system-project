@@ -43,7 +43,7 @@
 </p>
 
 ## O que é?
- A Alfabit é uma empresa de tecnologia inovadora e dedicada a fornecer soluções criativas e eficientes para seus clientes. Reconhecendo a importância do design consistente e intuitivo em todas as suas plataformas e produtos, a Alfabit decidiu investir em um design system de ponta.
+ A Alfabit é uma empresa de tecnologia inovadora dedicada a fornecer soluções criativas e eficientes para seus clientes. Reconhecendo a importância do design consistente e intuitivo em todas as suas plataformas e produtos, a Alfabit decidiu investir em um design system de ponta.
  <br> </br>
 
 ## 👨‍💻 Como instalar?
@@ -59,7 +59,7 @@ yarn add alfabit-ds
 
 ## 🏃 Como usar?
 
-A biblioteca Alfabit-ds foi criada para funcionar em aplicações Next.js+TailwindCSS. Então para usá-la lembre-se de criar suas aplicações com Next.js e TailwindCSS. Para que você consiga usar todos os componentes da biblioteca sem problemas é necessário uma configuração adicional no seu projeto. Vamos fazer isso passo a passo: 
+A biblioteca Alfabit-ds foi criada para funcionar em aplicações Next.js+TailwindCSS. Portanto, para usá-la lembre-se de criar suas aplicações com essa estrutura. Para que você consiga usar todos os componentes da biblioteca sem problemas é necessário uma configuração adicional no seu projeto. Vamos fazer isso passo a passo: 
 
     
 1. No mesmo arquivo que você importa as camadas do tailwind (geralmente o arquivo `globals.css` ou `styles.css` ) importe o arquivo CSS da biblioteca Alfabit também
@@ -94,7 +94,7 @@ A biblioteca Alfabit-ds foi criada para funcionar em aplicações Next.js+Tailwi
     }
     ```
     
-4. Configure o transpile do Next.js no arquivo `next.config.js`. Na nova versão do Next 13 temos um recurso, que vai ajudar a transpilar a nossa biblioteca. Sem isso vamos ficar recebendo sucessivos erros de compilação porque o Next não vai entender nossa biblioteca.
+4. Configure o transpile do Next.js no arquivo `next.config.js`. Na nova versão do Next 13 temos um recurso que vai ajudar a transpilar a nossa biblioteca. Sem isso vamos ficar recebendo sucessivos erros de compilação porque o Next não vai entender nossa biblioteca.
     
     ```jsx
     /** @type {import('next').NextConfig} */
@@ -126,7 +126,7 @@ export default function Home() {
 
 ## 🎨 Quais cores foram utilizadas no padrão da biblioteca?
 
-Toda a identidade visual da biblioteca, como os componentes, espaçamentos, cores, você pode acessar no [Figma clicando aqui neste link](https://www.figma.com/file/h86gUvqUXTKwgr6tVYinLT/React%3A-Design-System-com-Tailwind?type=design&node-id=0-1&t=GuaFV9cp30SS2di9-0).
+Toda a identidade visual da biblioteca, como os componentes, espaçamentos e cores, você pode acessar no [Figma clicando aqui neste link](https://www.figma.com/file/h86gUvqUXTKwgr6tVYinLT/React%3A-Design-System-com-Tailwind?type=design&node-id=0-1&t=GuaFV9cp30SS2di9-0).
 
 > Confira também a documentação da biblioteca para mais detalhes de uso [Documentação](https://alfabit-ds.vercel.app/?path=/docs/design-tokens-colors--docs).
 
@@ -160,6 +160,6 @@ Esta é a equipe responsável pela criação desta biblioteca de componentes
 
 ## Licença 
 
-The [MIT License]() (MIT)
+The [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html) (GPL)
 
 Copyright :copyright: 2023 - Alfabit Design System
